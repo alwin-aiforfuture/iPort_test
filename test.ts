@@ -1,1 +1,11 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+//% color="#EABD00" weight=5 icon="\uf085" block="iPort"
+
+namespace extension{ 
+
+    /**
+     * This is a statement block 
+     */
+    //% block="Coming soon123. Stay tuned!"
+    export function test(): void {
+    }
+}
