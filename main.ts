@@ -1,4 +1,4 @@
-//% color="#EABD00" weight=5 icon="\uf085" block="CUHK-JC iPort"
+//% color="#EABD00" weight=5 icon="\uf085" block="iPort"
 
 namespace extension{ 
 
