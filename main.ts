@@ -1,11 +1,20 @@
-//% color="#EABD00" weight=5 icon="\uf085" block="iPort"
-
-namespace extension{ 
-
+/**
+ * Pick some fruit and peel it.
+ */
+//% weight=70 icon="\uf185" color=#EC7505
+namespace tropic {
     /**
-     * This is a statement block 
+     * Pick a fruit
      */
-    //% block="Coming soon123. Stay tuned!"
-    export function test(): void {
+    //% blockId=tropic_pick block="pick a %fruit"
+    export function pick(fruit: TropicalFruit): boolean {
+        return true;
+    }
+    /**
+     * Peel the fruit if possible
+     */
+    //% blockId=tropic_peel block="peel a %fruit"
+    export function peel(fruit: TropicalFruit): boolean {
+        return (fruit == TropicalFruit.Banana);
     }
 }
