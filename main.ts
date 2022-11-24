@@ -1,20 +1,15 @@
 /**
- * Pick some fruit and peel it.
- */
-//% weight=70 icon="\uf185" color=#EC7505
-namespace tropic {
-    // /**
-    //  * Pick a fruit
-    //  */
-    //% blockId=tropic_pick block="pick a %fruit"
-    // export function pick(fruit: TropicalFruit): boolean {
-    //     return true;
-    // }
-    // /**
-    //  * Peel the fruit if possible
-    //  */
-    // //% blockId=tropic_peel block="peel a %fruit"
-    // export function peel(fruit: TropicalFruit): boolean {
-    //     return (fruit == TropicalFruit.Banana);
-    // }
+* Cool LED functionalities
+*/
+namespace ledTricks {
+    /**
+    * Blinks the LED once.
+    */
+    //% block
+    export function blink() {
+        pins.LED.digitalWrite(true)
+        pause(500)
+        pins.LED.digitalWrite(false)
+        pause(500)
+    }
 }
